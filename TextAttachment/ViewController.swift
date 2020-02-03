@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         getDetails()
     }
-    var imageCount = 1;
+    var imageCount = 0;
     var content = NSMutableAttributedString(string: "")
     
     @IBOutlet weak var newsImage: UIImageView!
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     //            "Authorization" : "Bearer "+retrievedToken!
     //        ]
             
-            let url = "https://api.npoint.io/6e17c8f7708e365b0197/data/0"
+            let url = "https://api.npoint.io/5ab45880fc3dd8c41671/data/0"
             let urlString = URL(string: url)
                        var mutableURLRequest = URLRequest(url: urlString!)
                        mutableURLRequest.httpMethod = "GET"
